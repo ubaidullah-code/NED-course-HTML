@@ -1,9 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Form Assignment</title>
-    </head>
-    <body>
-        <h1>Form Assignment</h1>
-    </body>
+
+<head>
+    <title>Form Assignment</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #658cc4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header img {
+            width: 140px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        ul li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(99, 95, 95, 0.507);
+        }
+
+        .sectionDiv {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            row-gap: 8px;
+        }
+
+        .sectionDiv2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            row-gap: 8px;
+        }
+
+        .mainDiv {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        span,
+        label {
+            color: gray;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+        h4 {
+            margin: 20px 0 12px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .mainDiv {
+                flex-direction: column;
+            }
+
+            .sectionDiv {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="freepik_br_1acc8152-84c5-4246-9879-6b30324a57e7.png" alt="">
+        <h1>WEBSITE DEVELOPMENT</h1>
+        <ul>
+            <li>GOVERNMENT OF SINDH</li>
+            <li>ELECTRICAL DEPARTMENT</li>
+            <li>NED UNIVERSITY</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <center>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form to register</p>
+    </center>
+
+    <form style="width: 80%; margin: auto;">
+
+        <div>
+            <h4>Name</h4>
+            <div class="mainDiv">
+                <div class="sectionDiv">
+                    <span>Description (Optional)</span>
+                    <input type="text" placeholder="Type your first name">
+                    <label>First Name</label>
+                </div>
+
+                <div class="sectionDiv">
+                    <span>Description (Optional)</span>
+                    <input type="text" placeholder="Type your last name">
+                    <label>Last Name</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>Email</h4>
+            <div class="sectionDiv2">
+                <span>Description (Optional)</span>
+                <input type="email" placeholder="Type your email">
+                <label>Email Address</label>
+            </div>
+        </div>
+
+        <div>
+            <h4>Phone Number</h4>
+            <div class="sectionDiv2">
+                <span>Description (Optional)</span>
+                <input type="tel" placeholder="(000) 000-0000">
+                <label>Phone Number</label>
+            </div>
+        </div>
+
+        <div>
+            <h4>Date of Birth</h4>
+            <div class="sectionDiv2">
+                <span>Description (Optional)</span>
+                <input type="date">
+                <label>Date</label>
+            </div>
+        </div>
+
+        <div>
+            <h4>Gender</h4>
+            <span>Description (Optional)</span>
+
+            <div style="display: flex; justify-content:space-between; align-items:center">
+                <p><input type="radio" name="gender"> Male</p>
+                <img src="8997755.png" width="20px" height="20px" alt="">
+            </div>
+
+            <div style="display: flex; justify-content:space-between; align-items:center">
+                <p><input type="radio" name="gender"> Female</p>
+                <img src="8997755.png" width="20px" height="20px" alt="">
+            </div>
+        </div>
+
+    </form>
+</body>
+
 </html>
