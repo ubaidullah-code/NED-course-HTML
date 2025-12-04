@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainSec {
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            width: 100%;
+            padding: 10px 10px 20px 10px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px gray , -1px -1px 5px gray ;
+
+        }
+
+        h1 {
+            color: #1977F3;
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #1977F3;
+            text-align: center;
+        }
+
+        button:nth-child(3) {
+            background-color: #1977F3;
+            color: white;
+            font-weight: 550;
+        }
+
+       form div > button {
+            background-color: #52D438;
+            color: white;
+        }
+        form div {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSec">
+        <h1>facebook</h1>
+        <form>
+            <input type="text" placeholder="Email address or phone number">
+            <input type="text" placeholder="Password">
+            <button>Log in</button>
+            <a href="#">Forgotten password?</a>
+            <div>
+
+                <button>Create new account</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

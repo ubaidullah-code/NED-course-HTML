@@ -1,0 +1,125 @@
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+body{
+    background-color: #f3f4f8;
+    min-height: 100vh;
+    
+}
+form {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 20px gray ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.upperSection {
+    background-color: #FFFFFF;
+    /* background-color: red; */
+    border-radius: 6px 6px 0px  0px ;
+    padding: 13px 7px;
+
+}
+input{
+   
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+.lowerSection {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 0px 0px 6px 6px ;
+    margin-top: 3px;
+  
+}
+.userNameSec {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 8px; */
+    gap: 8px;
+}
+.dob{
+    width: 100%;
+}
+.dob , .GenderSection > label {
+    color: gray;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+#innerDob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#innerDob select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+     background-color: white;
+}
+.selectGen {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+
+}
+.selectGen div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 100%;
+    
+}
+.selectGen div > input {
+    width: auto;
+}
+.selectGen div > label {
+    font-size: 14px;
+}
+p{
+    font-size: 12px;
+}
+button{
+    background-color: #2FD535;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 70px;
+    font-weight: 600;
+}
+.inputcheck , .userNameSec  input{
+     background-color: #F5F6F8;
+     
+}
+@media (max-width : 500px) {
+    form {
+    width: 90vw;
+  
+    box-shadow: 1px 1px 20px gray ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+}
+  
